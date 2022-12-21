@@ -417,7 +417,6 @@ ol {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
- 
   padding-left: 24px;
   padding-left: 24px;
 }
@@ -451,9 +450,7 @@ ol {
   display: inline-block;
   
 }
-/*.contacts {
-    background: #0614b2;
-    }*/
+
 .contacts-link:hover {
   color: #2196f3;
 }
