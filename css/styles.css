@@ -224,16 +224,16 @@ ol {
   margin-bottom: 30px;
 }
 .icon-ant::before {
-  background-image: url(../images/antenna\ 1.png);
+  background-image: url(../images/antenna\ 1.svg);
 }
 .icon-clock::before{
-  background-image: url(../images/clock\ 1.png);
+  background-image: url(../images/clock\ 1.svg);
 }
 .icon-diagram::before{
-  background-image: url(../images/diagram\ 1.png);
+  background-image: url(../images/diagram\ 1.svg);
 }
 .icon-astr::before{
-  background-image: url(../images/astronaut\ 1.png);
+  background-image: url(../images/astronaut\ 1.svg);
 }
 .visually-hidden {
   position: absolute;
