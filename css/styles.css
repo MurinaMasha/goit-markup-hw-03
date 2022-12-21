@@ -125,7 +125,21 @@ ol {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
-  /*background-image: url(../images/Img20.jpg);*/
+
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right,
+   rgba(47, 48, 58, 0.4), 
+   rgba(47, 48, 58, 0.4)),
+ url(../images/Img20.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+
 }
 .about-container {
   text-align: center;
@@ -198,6 +212,29 @@ ol {
 .about-item:last-child {
   margin-right: 0px;
 }
+.about-item::before {
+  content: "";
+  display: block;
+  background-color:#F5F4FA;
+  border-radius: 4px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.icon-ant::before {
+  background-image: url(../images/antenna\ 1.png);
+}
+.icon-clock::before{
+  background-image: url(../images/clock\ 1.png);
+}
+.icon-diagram::before{
+  background-image: url(../images/diagram\ 1.png);
+}
+.icon-astr::before{
+  background-image: url(../images/astronaut\ 1.png);
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -254,6 +291,7 @@ ol {
 .img-item:only-child {
   margin-right: 0;
 }
+
 /*--------------------------------------staff------------------------------------------------*/
 .staff {
   background-color: #f5f4fa;
