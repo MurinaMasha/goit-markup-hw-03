@@ -30,6 +30,10 @@ ol {
   margin: 0px;
   padding: 0px;
 }
+button {
+  padding: 0px;
+  border: none;
+}
 /*-------------------------------------Header------------------------------------------------*/
 .header {
   background-color: #ffffff;
@@ -90,6 +94,9 @@ ol {
   margin-left: auto;
 }
 .header-contacts-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -111,6 +118,22 @@ ol {
   color: #2196f3;
 }
 
+.header-contacts-icon {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  background: #ffffff;
+  margin-right: 10px;
+  
+}
+.header-contacts-icon-tel {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  background: #ffffff;
+  margin-right: 10px;
+  
+}
 /*-------------------------------------main page------------------------------------------------*/
 .container {
   width: 1200px;
@@ -125,21 +148,21 @@ ol {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
-
 }
 .overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right,
-   rgba(47, 48, 58, 0.4), 
-   rgba(47, 48, 58, 0.4)),
- url(../images/Img20.jpg);
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
-
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img20.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .about-container {
   text-align: center;
@@ -192,7 +215,6 @@ ol {
 .about-container-list {
   margin-top: 0px;
   margin-bottom: 94px;
-  
 }
 .about-item-title {
   font-weight: 700;
@@ -213,9 +235,9 @@ ol {
   margin-right: 0px;
 }
 .about-item::before {
-  content: "";
+  content: '';
   display: block;
-  background-color:#F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
   height: 120px;
   background-repeat: no-repeat;
@@ -226,13 +248,13 @@ ol {
 .icon-ant::before {
   background-image: url(../images/antenna\ 1.svg);
 }
-.icon-clock::before{
+.icon-clock::before {
   background-image: url(../images/clock\ 1.svg);
 }
-.icon-diagram::before{
+.icon-diagram::before {
   background-image: url(../images/diagram\ 1.svg);
 }
-.icon-astr::before{
+.icon-astr::before {
   background-image: url(../images/astronaut\ 1.svg);
 }
 .visually-hidden {
@@ -267,7 +289,6 @@ ol {
 .container-img {
   margin-top: 0px;
   margin-bottom: 0px;
-  
 }
 .img-title {
   font-weight: 700;
@@ -318,10 +339,9 @@ ol {
   width: 270px;
   margin-right: 30px;
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  
-
 }
 .staff-item:last-child {
   margin-right: 0;
@@ -347,8 +367,81 @@ ol {
   color: #757575;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 0px;
+}
+.staff-icon-list {
+  display: flex;
+  gap: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 30px;
+  
+}
+.staff-icon-item {
+  width: 44px;
+  height: 44px;
+ 
+}
+.staff-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #2196f3;
+  width: 100%;
+  height: 100%;
+}
+.staff-icon {
+  fill:#EEEEEE;
+  width: 20px;
+  height: 20px;
+}
+/*-------------------------------------Customers------------------------------------------------*/
+.customers {
+  background-color:  #F5F5F5;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.customers-container {
+  margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 30px;
+  
+}
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 0px;
+  padding-top: 50px;
+}
+.customers-item {
+/* width: 170px; */
+border: 1px solid #AFB1B8;
+background-color: #F5F5F5;
+height: 92px;
+width: calc((100% - 30px * 5) / 6);
+ 
+}
+.customers-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
   
 }
 /*-------------------------------------Portfolio------------------------------------------------*/
@@ -428,7 +521,7 @@ ol {
 .projects-item {
   width: 370px;
   background-color: #ffffff;
-  }
+}
 .projects-box {
   border: 1px solid#EEEEEE;
   border-top: 0;
@@ -481,12 +574,10 @@ ol {
   letter-spacing: 0.03em;
   color: #2196f3;
   display: inline-block;
-  
 }
 .contacts-logo-s {
   color: black;
   display: inline-block;
-  
 }
 
 .contacts-link:hover {
